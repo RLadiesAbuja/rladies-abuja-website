@@ -1,7 +1,8 @@
 [build]
+  command = "curl -sL https://quarto.org/download/latest/quarto-linux-amd64.tar.gz -o /tmp/quarto.tar.gz && tar -xzf /tmp/quarto.tar.gz -C /tmp && /tmp/quarto-*/bin/quarto render"
   publish = "_site"
-  command = """
-    curl -sL https://quarto.org/download/latest/quarto-linux-amd64.tar.gz -o /tmp/quarto.tar.gz &&
-    tar -xzf /tmp/quarto.tar.gz -C /tmp &&
-    /tmp/quarto-*/bin/quarto render
-  """
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
