@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="col-lg-5 reveal">
         <div style="position:relative;display:flex;justify-content:center;">
           <div style="width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,#88398A,#F4A261);display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(136,57,138,.3);">
-            <!-- FIX: logo path must be images/logo.jpg and loaded via a proper img tag -->
             <img src="images/logo.jpg"
                  alt="R-Ladies Abuja Logo"
                  style="width:220px;height:220px;border-radius:50%;object-fit:cover;border:6px solid white;"
@@ -112,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
-<!-- VALUES — single row using flexbox -->
+<!-- VALUES -->
 <section class="section section-light" style="padding:5rem 1.5rem;">
   <div style="max-width:1100px;margin:0 auto;">
     <div class="section-header reveal">
@@ -137,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
-<!-- RECENT EVENTS — single row -->
+<!-- RECENT EVENTS — updated with dplyr talk as most recent -->
 <section class="section section-soft" style="padding:5rem 1.5rem;">
   <div style="max-width:1100px;margin:0 auto;">
     <div class="section-header reveal">
@@ -146,58 +145,67 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>From ggplot2 masterclasses to cutting-edge AI workshops — every meetup sparks something new.</p>
     </div>
     <div class="events-row stagger">
+
       <div class="reveal">
         <div class="event-card">
-          <div class="event-date">📅 March 25, 2026</div>
-          <h3>Uncharted Waters: Learnings and Best Tricks from Developing a ggplot2 Data Visualization Masterclass</h3>
-          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">An in-depth dive into advanced ggplot2 techniques, themes, and customisation for publication-ready charts.</p>
+          <div class="event-date">📅 Jun 24, 2026</div>
+          <h3>Working Smarter with {dplyr} 1.2.0</h3>
+          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">Discover how the latest features in {dplyr} 1.2.0 help you write cleaner, faster, and more maintainable data transformation workflows.</p>
+          <div style="font-size:.78rem;color:#88398A;font-weight:600;margin-bottom:.75rem;">🎤 Isabella Velásquez, Posit PBC</div>
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="attendee-badge">🎬 Recorded</span>
+            <a href="https://www.youtube.com/watch?v=Ka9wf3Z2IcY" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">Watch →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="event-card">
+          <div class="event-date">📅 May 14, 2026</div>
+          <h3>Automatic NLP with LLMs using mall</h3>
+          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">How mall lets us bypass model training entirely by using LLMs for sentiment analysis, translation, and entity extraction row-wise across data.</p>
+          <div style="font-size:.78rem;color:#88398A;font-weight:600;margin-bottom:.75rem;">🎤 Edgar Ruiz</div>
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="attendee-badge">🎬 Recorded</span>
+            <a href="https://www.youtube.com/watch?v=jh2U5U-mJ_w" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">Watch →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="event-card">
+          <div class="event-date">📅 Mar 25, 2026</div>
+          <h3>Uncharted Waters: Best Tricks from Developing a ggplot2 Masterclass</h3>
+          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">Advanced ggplot2 techniques, themes, and customisation for publication-ready charts.</p>
+          <div style="font-size:.78rem;color:#88398A;font-weight:600;margin-bottom:.75rem;">🎤 Dr Cedric Scherer</div>
           <div class="d-flex align-items-center justify-content-between">
             <span class="attendee-badge">👥 67 attendees</span>
             <a href="https://www.meetup.com/rladies-abuja/events/313505524/" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">View →</a>
           </div>
         </div>
       </div>
+
       <div class="reveal">
         <div class="event-card">
           <div class="event-date">📅 Feb 25, 2026</div>
           <h3>Outgrowing Your Laptop with R and Positron</h3>
           <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">Exploring cloud computing, Posit Workbench, and the new Positron IDE for scalable R workflows.</p>
+          <div style="font-size:.78rem;color:#88398A;font-weight:600;margin-bottom:.75rem;">🎤 Julia Silge</div>
           <div class="d-flex align-items-center justify-content-between">
             <span class="attendee-badge">👥 51 attendees</span>
             <a href="https://www.meetup.com/rladies-abuja/events/312978180/" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">View →</a>
           </div>
         </div>
       </div>
-      <div class="reveal">
-        <div class="event-card">
-          <div class="event-date">📅 Oct 25, 2025</div>
-          <h3>Coding Against Cancer: R for Breast Cancer Detection</h3>
-          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">Using R to analyse anthropometric data and build models for early breast cancer detection.</p>
-          <div class="d-flex align-items-center justify-content-between">
-            <span class="attendee-badge">👥 15 attendees</span>
-            <a href="https://www.meetup.com/rladies-abuja/events/311516936/" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">View →</a>
-          </div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="event-card">
-          <div class="event-date">📅 Sep 17, 2025</div>
-          <h3>Easy Code-based Data Visualization with tidyplots</h3>
-          <p style="font-size:.85rem;color:#777;margin-bottom:1rem;">An introduction to the tidyplots package — elegant, reproducible plots with minimal code.</p>
-          <div class="d-flex align-items-center justify-content-between">
-            <span class="attendee-badge">👥 29 attendees</span>
-            <a href="https://www.meetup.com/rladies-abuja/events/310910580/" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">View →</a>
-          </div>
-        </div>
-      </div>
+
     </div>
     <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="events.html" class="btn-purple">See All 34 Events →</a>
+      <a href="events.html" class="btn-purple">See All Events →</a>
     </div>
   </div>
 </section>
 
-<!-- YOUTUBE SECTION — fixed embed -->
+<!-- YOUTUBE SECTION — fixed: embed a specific video, not the broken playlist -->
 <section class="section section-dark" style="padding:5rem 1.5rem;">
   <div style="max-width:1100px;margin:0 auto;">
     <div class="section-header reveal">
@@ -206,40 +214,47 @@ document.addEventListener("DOMContentLoaded", () => {
       <p style="color:rgba(255,255,255,.7);">All our sessions are recorded and freely available on our YouTube channel. Learn at your own pace.</p>
     </div>
     <div class="row g-4 stagger">
-      <!-- FIX: use correct YouTube playlist embed for channel UCktFo5XoX5QZMWb2Gb3KY2A -->
+
+      <!-- Latest talk embedded directly — most reliable approach -->
       <div class="col-lg-7 reveal">
         <div style="border-radius:14px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,.5);">
-          <div class="video-thumb">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
             <iframe
-              src="https://www.youtube.com/embed/videoseries?list=UUktFo5XoX5QZMWb2Gb3KY2A&rel=0&modestbranding=1"
-              title="R-Ladies Abuja — All Talks"
+              src="https://www.youtube.com/embed/Ka9wf3Z2IcY?rel=0&modestbranding=1"
+              title="Working Smarter with {dplyr} 1.2.0 — Isabella Velásquez"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
             </iframe>
           </div>
         </div>
+        <p style="color:rgba(255,255,255,.5);font-size:.75rem;margin-top:.6rem;text-align:center;">
+          Latest talk: <em>Working Smarter with {dplyr} 1.2.0</em> · Isabella Velásquez, Posit PBC
+        </p>
       </div>
+
       <div class="col-lg-5 reveal">
         <div style="display:flex;flex-direction:column;gap:.75rem;height:100%;justify-content:center;">
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.25rem;">
+            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">🔧 Data Wrangling</div>
+            <div style="font-size:.88rem;font-weight:600;color:white;">{dplyr}, data.table & tidyverse Workflows</div>
+          </div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.25rem;">
             <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">📊 Data Visualisation</div>
             <div style="font-size:.88rem;font-weight:600;color:white;">ggplot2 & tidyplots Deep Dives</div>
           </div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.25rem;">
             <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">🤖 Machine Learning & AI</div>
-            <div style="font-size:.88rem;font-weight:600;color:white;">ML & AI with R Workshops</div>
+            <div style="font-size:.88rem;font-weight:600;color:white;">LLMs, NLP & ML with R</div>
           </div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.25rem;">
-            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">🔬 Applied Data Science</div>
-            <div style="font-size:.88rem;font-weight:600;color:white;">Real-World Case Studies</div>
-          </div>
-          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.25rem;">
-            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">☁️ Cloud & Scaling</div>
+            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F4A261;margin-bottom:.35rem;">☁️ Cloud & Workflow</div>
             <div style="font-size:.88rem;font-weight:600;color:white;">Positron, Posit Cloud & More</div>
           </div>
           <a href="https://www.youtube.com/@r-ladiesabuja/videos" target="_blank" class="btn-rladies" style="text-align:center;margin-top:.5rem;">▶ Visit Our Channel</a>
         </div>
       </div>
+
     </div>
     <div style="text-align:center;margin-top:2.5rem;" class="reveal">
       <a href="talks.html" class="btn-outline-rladies">📺 Explore All Talks →</a>
@@ -247,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
-<!-- SPONSORS — single row -->
+<!-- SPONSORS -->
 <section class="section section-light" style="padding:4rem 1.5rem;">
   <div style="max-width:900px;margin:0 auto;text-align:center;">
     <div class="reveal" style="margin-bottom:2rem;">
