@@ -51,8 +51,8 @@ page-layout: custom
           <div style="background:white;border-radius:12px;padding:1.25rem;border:1px solid #f0e0f1;height:100%;">
             <span style="font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#88398A;">Spatial Analysis</span>
             <h4 style="font-family:'Fraunces',serif;color:#5c1a5e;font-size:1rem;margin:.4rem 0 .35rem;">From Maps to Insights: Geospatial Hotspot Analysis in R</h4>
-            <div class="talk-speaker">🎤 <strong>Zeenatuddeen Muhammad</strong> — Environmental health Consultant; Co-organiser R-Ladies Abuja</div>
-            <p style="font-size:.82rem;color:#777;margin:.6rem 0 .9rem;line-height:1.6;">This training will guide you step-by-step from raw data to meaningful maps and spatial statistics that can inform health interventions and decision-making.</p>
+            <div class="talk-speaker">🎤 <strong>Zeenatuddeen Muhammad</strong> — Environmental Health Consultant; Co-organiser R-Ladies Abuja</div>
+            <p style="font-size:.82rem;color:#777;margin:.6rem 0 .9rem;line-height:1.6;">This training guides you step-by-step from raw data to meaningful maps and spatial statistics that can inform health interventions and decision-making.</p>
             <a href="https://www.youtube.com/watch?v=4iEY0Va6BBk" target="_blank" style="font-size:.78rem;color:#88398A;font-weight:600;text-decoration:none;">▶ Watch →</a>
           </div>
         </div>
@@ -132,8 +132,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Talks data — just add a new object here to add a talk; date drives the sort order
+// Talks data — add a new object here to add a talk; date drives sort order
 const TALKS = [
+  {
+    date: "2026-06-24",
+    title: "Working Smarter with {dplyr} 1.2.0",
+    speaker: "Isabella Velásquez, Posit PBC",
+    youtube: "https://www.youtube.com/watch?v=Ka9wf3Z2IcY&t=14s",
+    embed: "Ka9wf3Z2IcY",
+    category: "Data Wrangling",
+    description: "Discover how the latest features in {dplyr} 1.2.0 can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.",
+    slides: ""
+  },
   {
     date: "2026-05-14",
     title: "Automatic NLP with LLMs using mall",
