@@ -2,7 +2,7 @@
 
 The official website for R-Ladies Abuja — a local chapter of [R-Ladies Global](https://rladies.org), based in Abuja, FCT, Nigeria.
 
-🌐 Live site: [rladiesabuja.netlify.app](https://rladiesabuja.netlify.app)
+🌐 Live site: [rladies-abuja.netlify.app](https://rladies-abuja.netlify.app/)
 
 ## Built With
 
