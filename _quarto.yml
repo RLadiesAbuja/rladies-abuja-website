@@ -9,7 +9,7 @@ website:
   title: "R-Ladies Abuja"
   description: "Empowering women in R, data science & AI — Abuja, Nigeria 🇳🇬"
   favicon: images/logo.jpg
-  site-url: "https://rladiesabuja.netlify.app"
+  site-url: "https://rladies-abuja.netlify.app/"
 
   navbar:
     logo: images/logo.jpg
